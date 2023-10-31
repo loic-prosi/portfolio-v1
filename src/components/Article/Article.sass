@@ -1,0 +1,49 @@
+.article
+  display: flex
+  flex-direction: column
+  width: 50%
+  @media (max-width: 992px)
+    width: 100%
+  @media (max-width: 576px)
+    box-sizing: border-box
+    padding: 0 15px
+  &__heading
+    display: flex
+    flex-direction: column
+    margin: 0 0 20px 0
+  &__info
+    margin: 0 0 0 auto
+    font-size: 25px
+    color: $secondary-color-darken-25
+    @media (max-width: 992px)
+      margin: 0
+      font-size: 22px
+    @media (max-width: 576px)
+      font-size: 20px
+  &__title
+    margin: 0
+    font-size: 72px
+    font-weight: normal
+    @media (max-width: 992px)
+      font-size: 60px
+    @media (max-width: 576px)
+      font-size: 48px
+  &__tags
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    margin-bottom: 20px
+  &__text
+    margin: 0 0 20px 0
+    font-size: 20px
+    line-height: 30px
+    white-space: pre-line
+    color: $secondary-color-darken-25
+    @media (max-width: 576px)
+      font-size: 18px
+  &__links
+    display: flex
+    margin: 0 0 20px 0
+    gap: 20px
+    padding: 0
+    list-style: none

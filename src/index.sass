@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap')
+
+$primary-color: black
+$secondary-color: white
+$secondary-color-darken-25: darken($secondary-color, 25%)
+$secondary-color-darken-50: darken($secondary-color, 50%)
+$secondary-color-darken-75: darken($secondary-color, 75%)
+$selected-color: #2baccc
+
+body
+  margin: 0
+  background-color: $primary-color
+  font-family: 'Work Sans', sans-serif
+  color: $secondary-color
+
+button
+  font-family: 'Work Sans', sans-serif
+
+.layout
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  margin: 0
+  &__container
+    @media (min-width: 1440px)
+      width: 1440px
+      margin: 0 auto
+
+.page
+  padding: 175px 50px 0 50px
+  @media (max-width: 992px)
+    padding: 150px 30px 0 30px
+  @media (max-width: 576px)
+    padding: 120px 0 0 0
+
+.section
+  display: flex
+  gap: 50px
+  @media (max-width: 992px)
+    flex-direction: column
+
+@import "./pages/Home/Home.sass"
+@import "./pages/Projects/Projects.sass"
+@import "./pages/Error/Error.sass"
+
+@import "./components/Navbar/Navbar.sass"
+@import "./components/Footer/Footer.sass"
+@import "./components/Article/Article.sass"
+@import "./components/SideContent/SideContent.sass"
+@import "./components/Card/Card.sass"
+@import "./components/Link/Link.sass"
+@import "./components/Tag/Tag.sass"
+@import "./components/Separator/Separator.sass"

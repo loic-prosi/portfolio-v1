@@ -1,0 +1,82 @@
+[
+  {
+    "id": "oc-web-dev-p2",
+    "name": "Booki",
+    "description": "Le site Booki est destiné aux utilisateurs souhaitant trouver des hébergements et des activités dans la ville de leur choix.\n\nCe site statique a été réalisé dans le cadre de ma formation chez OpenClassrooms à partir d’une maquette et d’une base de code en HTML et CSS. La disposition des cards dans la liste a été réalisée avec flexbox.",
+    "skills": ["html", "css"],
+    "year": 2023,
+    "github": "https://github.com/loic-prosi/oc-web-dev-p2",
+    "url": "https://oc-web-dev-p2.onrender.com"
+  },
+  {
+    "id": "oc-web-dev-p3",
+    "name": "Portfolio d'architecte",
+    "description": "Site réalisé pour ma formation chez OpenClassrooms à partir d’une maquette et d’une base de code en Javascript et HTML/CSS.\n\nUn filtre devait être ajouté dans le portfolio permettant de trier les travaux de l’architecte ainsi qu’une modale pour en ajouter ou les modifier.\n\nUne page de connexion pour l’administrateur du site a dû également être conçue pour pouvoir créer ou modifier des travaux.",
+    "skills": ["html", "css", "javascript"],
+    "year": 2023,
+    "github": "https://github.com/loic-prosi/oc-web-dev-p3",
+    "url": "https://oc-web-dev-p3-front.onrender.com"
+  },
+  {
+    "id": "oc-web-dev-p4",
+    "name": "Menu Maker",
+    "description": "Ce travail réalisé dans le cadre de ma formation chez OpenClassrooms consistait à se mettre dans la peau d’un chef de projet afin de concevoir un site de création de menu destiné aux restaurateurs.\n\nLes tâches étaient de rédiger les spécifications techniques en faisant une veille préalable puis de découper les tâches nécessaires à la réalisation du projet à partir des user stories fournies. Jira a été utilisé comme outil de gestion.",
+    "skills": ["scrum"],
+    "year": 2023
+  },
+  {
+    "id": "oc-web-dev-p5",
+    "name": "Portfolio de photographe",
+    "description": "Optimisation d’un portfolio dans le cadre de ma formation chez OpenClassrooms. Le site avait un mauvais score sur Google Lighthouse et il a fallu améliorer les performances, le SEO et l'accessibilité.\n\nPour les performances c’est une optimisation des images qui a été faite en réduisant leur taille et en changeant de format. Le code a été minifié et les librairies externes analysées pour ne garder que ce qui est nécessaire afin de réduire les temps de chargement.\n\nPour le SEO et l’accessibilité, une mise à jour de la sémantique du code HTML a été effectuée.",
+    "skills": ["optimization", "accessibility", "seo"],
+    "year": 2023,
+    "github": "https://github.com/loic-prosi/oc-web-dev-p5",
+    "url": "https://oc-web-dev-p5.onrender.com"
+  },
+  {
+    "id": "oc-web-dev-p6",
+    "name": "Kasa",
+    "description": "Application de location immobilière entre particuliers développée pour ma formation chez OpenClassrooms. Toute l’interface a été construite avec le framework React.\n\nLes fonctionnalités comprenaient notamment un système de routes avec la librairie React Router mais aussi un carrousel animé pour la page des locations. L’utilisation de Sass au lieu du CSS classique était recommandée.",
+    "skills": [
+      "html",
+      "css",
+      "sass",
+      "javascript",
+      "react",
+      "react-router",
+      "jest"
+    ],
+    "year": 2023,
+    "github": "https://github.com/loic-prosi/oc-web-dev-p6",
+    "url": "https://oc-web-dev-p6.onrender.com"
+  },
+  {
+    "id": "oc-web-dev-p7",
+    "name": "Mon vieux grimoire",
+    "description": "Il s’agît d’une API de notation de livres réalisée dans le cadre de ma formation chez OpenClassrooms. Celle-ci comprend deux ressources: les livres et les utilisateurs.\n\nUn utilisateur peut afficher des livres et noter ceux des autres cependant il ne peut ajouter, modifier ou supprimer que les siens.\n\nL’authentification se fait par la génération d’un token JWT et le hashage des mots de passe par la librairie bcrypt ce qui permet une sécurité accrue.",
+    "skills": [
+      "javascript",
+      "nodejs",
+      "express",
+      "mongoose",
+      "mongodb",
+      "openapi"
+    ],
+    "year": 2023,
+    "github": "https://github.com/loic-prosi/oc-web-dev-p7"
+  },
+  {
+    "id": "just-mining",
+    "name": "Application de comptabilité",
+    "description": "Première version d’une application de comptabilité pour une startup spécialisée dans l’investissement crypto, Just Mining.\n\nCette application permet de surveiller les avoirs de l'entreprise, tant en crypto-monnaies qu'en euros, sur une période donnée. Les utilisateurs connectés peuvent ajouter ou modifier des montants dans la devise de leur choix et générer des rapports.\n\nDes comparaisons entre les rapports sont effectuées pour évaluer les profits et pertes pour chaque crypto-monnaie.",
+    "skills": ["react", "antd", "nodejs", "koa", "mongoose", "mongodb"],
+    "year": 2022
+  },
+  {
+    "id": "avec",
+    "name": "Console d'administration",
+    "description": "Console d'administration associée à une application de gestion de rendez-vous médicaux appartenant au groupe AVEC, qui opère plusieurs centres de santé en France.\n\nLa console offre une interface conviviale pour les administrateurs et les secrétaires, permettant aux utilisateurs authentifiés d'ajouter, modifier ou supprimer les informations relatives au personnel et aux patients des centres de santé.",
+    "skills": ["react", "antd", "nodejs", "express", "mongoose", "mongodb"],
+    "year": "2019 - 2022"
+  }
+]

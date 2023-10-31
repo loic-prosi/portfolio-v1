@@ -1,0 +1,20 @@
+[
+  { "id": "html", "name": "HTML", "category": "Front-end" },
+  { "id": "css", "name": "CSS", "category": "Front-end" },
+  { "id": "sass", "name": "Sass", "category": "Front-end" },
+  { "id": "javascript", "name": "Javascript" },
+  { "id": "react", "name": "React", "category": "Front-end" },
+  { "id": "react-router", "name": "React router", "category": "Front-end" },
+  { "id": "antd", "name": "Ant Design", "category": "Front-end" },
+  { "id": "nodejs", "name": "Node.js", "category": "Back-end" },
+  { "id": "express", "name": "Express", "category": "Back-end" },
+  { "id": "koa", "name": "Koa.js", "category": "Back-end" },
+  { "id": "mongoose", "name": "Mongoose", "category": "Back-end" },
+  { "id": "mongodb", "name": "MongoDB", "category": "Back-end" },
+  { "id": "openapi", "name": "OpenAPI", "category": "Back-end" },
+  { "id": "jest", "name": "Jest" },
+  { "id": "optimization", "name": "Optimisation", "category": "Front-end" },
+  { "id": "seo", "name": "Seo", "category": "Front-end" },
+  { "id": "accessibility", "name": "Accessibilité", "category": "Front-end" },
+  { "id": "scrum", "name": "Scrum", "category": "Gestion de projet" }
+]

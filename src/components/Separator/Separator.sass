@@ -1,0 +1,25 @@
+.separator
+  display: flex
+  position: relative
+  justify-content: center
+  align-items: center
+  &__text
+    padding: 0 15px
+    background-color: $primary-color
+    font-size: 25px
+    font-weight: 100
+    color: $secondary-color-darken-25
+    z-index: 1
+    @media (max-width: 992px)
+      font-size: 22px
+    @media (max-width: 576px)
+      font-size: 18px
+  &__line
+    position: absolute
+    width: 50%
+    height: 1px
+    background-color: $secondary-color-darken-75
+    @media (max-width: 992px)
+      width: 90%
+    @media (max-width: 576px)
+      width: 100%

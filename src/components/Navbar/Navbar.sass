@@ -1,0 +1,51 @@
+.navbar
+  display: flex
+  position: fixed
+  width: 100%
+  align-items: center
+  padding: 35px 50px
+  background-color: $primary-color
+  z-index: 2
+  .icon
+    display: none
+  @media (max-width: 992px)
+    padding: 30px 30px
+    .icon
+      display: inline
+  @media (max-width: 576px)
+    padding: 20px 15px
+  &__title
+    margin: 0
+    font-size: 20px
+    font-weight: bold
+    @media (max-width: 992px)
+      width: 50px
+      line-height: 18px
+      transform: translateY(2px)
+    @media (max-width: 576px)
+      display: none
+  &__title-link
+    display: flex
+    align-items: center
+    gap: 5px
+    text-decoration: none
+    color: $secondary-color
+  &__links
+    display: flex
+    gap: 20px
+    list-style: none
+    margin-left: 10px
+    @media (max-width: 992px)
+      margin-left: 0
+      padding-left: 30px
+  &__link
+    text-decoration: none
+    font-size: 18px
+    color: $secondary-color
+    @media (max-width: 576px)
+      font-size: 16px
+    &:hover
+      transition: color 350ms cubic-bezier(.165,.84,.44,1)
+      color: $selected-color
+    &--active
+      color: $selected-color

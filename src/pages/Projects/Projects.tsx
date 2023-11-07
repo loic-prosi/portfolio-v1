@@ -6,23 +6,29 @@ import Card from "../../components/Card";
 import Separator from "../../components/Separator";
 import Tag from "../../components/Tag/Tag";
 
-const Projects = () => {
-  const { works } = useLoaderData();
+import { WorkConsolidatedTypes } from "../../utils/works";
+
+interface ProjectsDataTypes {
+  works: Array<WorkConsolidatedTypes>;
+}
+
+const Projects = (): React.ReactElement => {
+  const { works } = useLoaderData() as ProjectsDataTypes;
   const [filteredWorks, setFilteredWorks] = useState(works);
   const [currentFilter, setCurrentFilter] = useState("Tous");
 
   const filters = ["Tous", "Front-end", "Back-end", "Gestion de projet"];
 
-  const filterWorks = (e) => {
-    if (e.target.value !== "Tous") {
-      let filteredWorks = works.filter((work) =>
-        work.categories.includes(e.target.value)
+  const filterWorks = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    if (e.currentTarget.value !== "Tous") {
+      let filteredWorks = works.filter((work: WorkConsolidatedTypes) =>
+        work.categories.includes(e.currentTarget.value)
       );
       setFilteredWorks(filteredWorks);
     } else {
       setFilteredWorks(works);
     }
-    setCurrentFilter(e.target.value);
+    setCurrentFilter(e.currentTarget.value);
   };
 
   const renderFilters = () => {
@@ -44,7 +50,6 @@ const Projects = () => {
         text="Découvrez mon travail à travers une sélection de projets variés. Parcourez-les pour en apprendre davantage sur mon expérience et mes compétences."
       />
       <Separator
-        className="projects__separator"
         text={`${filteredWorks.length} projet${
           filteredWorks.length > 1 ? "s" : ""
         }`}
@@ -52,7 +57,7 @@ const Projects = () => {
       <div className="projects__filters">{renderFilters()}</div>
       <div className="projects__list">
         {filteredWorks &&
-          filteredWorks.map((work) => (
+          filteredWorks.map((work: WorkConsolidatedTypes) => (
             <Card
               key={work.id}
               id={work.id}

@@ -2,7 +2,7 @@ import Article from "../../components/Article";
 import SideContent from "../../components/SideContent";
 import Separator from "../../components/Separator";
 
-const Home = () => {
+const Home = (): React.ReactElement => {
   return (
     <main className="page page--home">
       <section className="section section--home">

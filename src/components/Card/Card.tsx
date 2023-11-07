@@ -2,7 +2,21 @@ import { Link } from "react-router-dom";
 
 import Tag from "../Tag";
 
-const Card = ({ id, name, year, image, categories }) => {
+interface CardProps {
+  id: string;
+  name: string;
+  year: number | string;
+  image: string;
+  categories: Array<string>;
+}
+
+const Card = ({
+  id,
+  name,
+  year,
+  image,
+  categories
+}: CardProps): React.ReactElement => {
   const renderTags = () => {
     return categories.map((category, index) => (
       <Tag key={`${index}-${category}`} type="card" text={category} />

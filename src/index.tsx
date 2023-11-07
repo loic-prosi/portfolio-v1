@@ -5,16 +5,50 @@ import reportWebVitals from "./reportWebVitals";
 
 import "./index.sass";
 
-import routesConfig from "./utils/routesConfig";
 import works from "./data/works.json";
 import skills from "./data/skills.json";
+
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Project from "./pages/Project";
+import About from "./pages/About";
+import Error from "./pages/Error";
+
+import { consolidateWorks, findWork, ParamsTypes } from "./utils/works";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+        loader: () => consolidateWorks(works, skills)
+      },
+      {
+        path: "/projects/:id",
+        element: <Project />,
+        loader: ({ params }: { params: ParamsTypes }) =>
+          findWork(params, works, skills)
+      },
+      {
+        path: "/about",
+        element: <About />
+      }
+    ]
+  }
+]);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-
-const routes = routesConfig(works, skills);
-const router = createBrowserRouter(routes);
 
 root.render(
   <React.StrictMode>

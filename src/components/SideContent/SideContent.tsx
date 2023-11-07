@@ -1,6 +1,20 @@
 import Icon from "../Icon/Icon";
 
-const SideContent = ({ image, alt, icon, size, text }) => {
+interface SideContentPropTypes {
+  image?: string;
+  alt?: string;
+  icon?: string;
+  size?: string;
+  text?: string;
+}
+
+const SideContent = ({
+  image,
+  alt,
+  icon,
+  size,
+  text
+}: SideContentPropTypes): React.ReactElement => {
   if (text) {
     return (
       <aside className="aside">
@@ -11,7 +25,7 @@ const SideContent = ({ image, alt, icon, size, text }) => {
   if (icon) {
     return (
       <figure className="figure">
-        <Icon className="figure__icon" name={icon} size={size} />
+        <Icon name={icon} size={size} alt={alt} />
       </figure>
     );
   }

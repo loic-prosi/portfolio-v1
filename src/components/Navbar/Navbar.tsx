@@ -1,16 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import Icon from "../Icon";
 
-const Navbar = () => {
+const Navbar = (): React.ReactElement => {
   return (
     <nav className="navbar">
       <Link className="navbar__title-link" to="/">
-        <Icon
-          className="navbar__logo"
-          name="logo"
-          size="45px"
-          alt="Loïc Prosi"
-        />
+        <Icon name="logo" size="45px" alt="Loïc Prosi" />
         <h1 className="navbar__title">Loïc Prosi</h1>
       </Link>
       <ul className="navbar__links">

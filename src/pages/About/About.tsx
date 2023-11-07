@@ -3,7 +3,7 @@ import SideContent from "../../components/SideContent";
 
 import cv from "../../assets/cv.pdf";
 
-const About = () => {
+const About = (): React.ReactElement => {
   return (
     <main className="page">
       <section className="section">

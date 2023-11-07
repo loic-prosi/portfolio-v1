@@ -1,13 +1,34 @@
 import Link from "../Link";
 import Tag from "../Tag";
 
-const Article = ({ info, title, text, tags, links }) => {
+import { LinkPropTypes } from "../Link";
+
+interface ArticlePropTypes {
+  info?: number | string;
+  title: string;
+  text?: string;
+  tags?: Array<string>;
+  links?: Array<LinkPropTypes>;
+}
+
+const Article = ({
+  info,
+  title,
+  text,
+  tags,
+  links
+}: ArticlePropTypes): React.ReactElement => {
   const renderTags = () => {
-    return tags.map((tag, index) => <Tag key={`${index}-${tag}`} text={tag} />);
+    return (
+      tags &&
+      tags.map((tag, index) => <Tag key={`${index}-${tag}`} text={tag} />)
+    );
   };
 
   const renderLinks = () => {
-    return links.map((link, index) => <Link key={`${index}`} link={link} />);
+    return (
+      links && links.map((link, index) => <Link key={`${index}`} {...link} />)
+    );
   };
 
   return (

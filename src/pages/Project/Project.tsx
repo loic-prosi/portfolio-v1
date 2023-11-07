@@ -3,8 +3,14 @@ import { useLoaderData } from "react-router-dom";
 import Article from "../../components/Article";
 import SideContent from "../../components/SideContent";
 
-const Project = () => {
-  const { work } = useLoaderData();
+import { WorkConsolidatedTypes } from "../../utils/works";
+
+interface ProjectDataTypes {
+  work: WorkConsolidatedTypes;
+}
+
+const Project = (): React.ReactElement => {
+  const { work } = useLoaderData() as ProjectDataTypes;
 
   return (
     <main className="page">

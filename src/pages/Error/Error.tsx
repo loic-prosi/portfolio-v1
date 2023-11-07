@@ -5,10 +5,14 @@ import Footer from "../../components/Footer";
 import Article from "../../components/Article";
 import SideContent from "../../components/SideContent";
 
-const Error = () => {
-  const error = useRouteError();
+interface ErrorTypes {
+  status: number;
+}
 
-  const errorStatus = error.status ? error.status : "???";
+const Error = (): React.ReactElement => {
+  const error = useRouteError() as ErrorTypes;
+
+  const errorStatus = error.status ? error.status.toString() : "???";
   const errorMessage =
     error.status && error.status === 404
       ? "Cette page n'existe pas."

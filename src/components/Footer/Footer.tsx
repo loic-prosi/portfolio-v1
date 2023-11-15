@@ -6,7 +6,7 @@ const Footer = (): React.ReactElement => {
       <span>Loïc Prosi - 2023</span>
       <Link
         name="Code source"
-        url="https://github.com/loic-prosi/oc-web-dev-p8"
+        url="https://github.com/loic-prosi/portfolio"
         icon="fa github"
       />
     </footer>

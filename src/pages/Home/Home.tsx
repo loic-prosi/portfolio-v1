@@ -8,7 +8,7 @@ const Home = (): React.ReactElement => {
       <section className="section section--home">
         <SideContent icon="logo" size="300px" />
         <Article
-          title="Développeur web front-end"
+          title="Développeur front-end junior"
           text="Passionné par le développement web, j'utilise mes compétences pour concevoir des expériences utilisateur de qualité."
           links={[
             {

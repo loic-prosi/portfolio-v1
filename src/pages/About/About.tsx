@@ -9,7 +9,7 @@ const About = (): React.ReactElement => {
       <section className="section">
         <Article
           title="À propos"
-          text={`Développeur web depuis 3 ans maintenant, je suis à la recherche de projets front-end me permettant d'élargir mes compétences et renforcer mon expertise.
+          text={`Développeur web depuis quelques années déjà, je suis à la recherche de projets front-end me permettant de renforcer mon expertise.
 
           La conception d’interfaces est mon activité favorite mais j’éprouve également un intérêt pour la partie back-end du métier au travers de la création d’API.
           

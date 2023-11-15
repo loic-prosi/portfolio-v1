@@ -23,20 +23,24 @@ const Link = ({
   const linkClassName = `link ${isLargeLink ? "link--large" : ""}`;
   const path = url ? url : "/";
 
-  if (download) {
+  if (url) {
+    if (download) {
+      return (
+        <a className={linkClassName} href={url} download>
+          {icon && <Icon name={icon} size={iconSize} />}
+          {name}
+        </a>
+      );
+    }
     return (
-      <a className={linkClassName} href={url} download>
+      <ReactRouterLink className={linkClassName} to={path}>
         {icon && <Icon name={icon} size={iconSize} />}
         {name}
-      </a>
+      </ReactRouterLink>
     );
+  } else {
+    return <></>;
   }
-  return (
-    <ReactRouterLink className={linkClassName} to={path}>
-      {icon && <Icon name={icon} size={iconSize} />}
-      {name}
-    </ReactRouterLink>
-  );
 };
 
 export default Link;

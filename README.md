@@ -18,7 +18,8 @@ When a user click on one project he is redirected to the corresponding page.
 Also, projects can be filtered by categories.
 
 ### Work page
-Contains the details of one project. The name, a description, an image, the year and the corresponding skills used to make the project.
+Contains the details of one project.  
+The name, a description, an image, the year and the corresponding skills used to make the project.
 
 ### About page
 Developer presentation page.

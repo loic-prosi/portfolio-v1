@@ -8,11 +8,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Home page
 A the top, a navigation bar containing my firstname, lastname, logo and the links to the different pages (Works, About).  
-In the center of the page a section can be found with the job title and a brief introduction phrase. Social network links can be found at the bottom (Github and LinkedIn).
+In the center of the page a section can be found with the job title and a brief introduction phrase.  
+Social network links can be found at the bottom (Github and LinkedIn).
 
 ### Works page
-List of cards containing the name, year and the logo of the project. One or more tags are present corresponding to the categories of the project (front-end, back-end, SEO or project management).
-When a user click on one project he is redirected to the corresponding page.
+List of cards containing the name, year and the logo of the project. One or more tags are present corresponding to the categories of the project (front-end, back-end, SEO or project management).  
+When a user click on one project he is redirected to the corresponding page.  
 Also, projects can be filtered by categories.
 
 ### Work page

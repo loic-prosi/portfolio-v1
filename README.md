@@ -4,6 +4,23 @@ Developer portfolio displaying my various projects.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+
+### Home page
+A the top, a navigation bar containing my firstname, lastname, logo and the links to the different pages (Works, About).
+In the center of the page a section can be found with the job title and a brief introduction phrase. Social network links can be found at the bottom (Github and LinkedIn).
+
+### Works page
+List of cards containing the name, year and the logo of the project. One or more tags are present corresponding to the categories of the project (front-end, back-end, SEO or project management).
+When a user click on one project he is redirected to the corresponding page.
+Also, projects can be filtered by categories.
+
+### Work page
+Contains the details of one project. The name, a description, an image, the year and the corresponding skills used to make the project.
+
+### About page
+My motivations as a web developper.
+
 ## Available Scripts
 
 In the project directory, you can run:

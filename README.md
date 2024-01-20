@@ -20,7 +20,36 @@ Also, projects can be filtered by categories.
 Contains the details of one project. The name, a description, an image, the year and the corresponding skills used to make the project.
 
 ### About page
-My motivations as a web developper.
+Developer presentation page.
+
+## Data
+
+All the projects data are contained in two JSON files:
+
+- **works.json**: Array of work objects. Contains detailed information about each project.
+- **skills.json**: Array of skill objects. Skills are used in the work page.
+
+### Work object
+
+- **id**: String. Id of the project.
+- **name**: String. Name of the project.
+- **description**: String. Description of the project.
+- **skills**: Array of strings. List of skills used to make the project.
+- **year**: Number. Starting date of the project.
+- **github**: String. Link to the project's Github page.
+- **url**: String. Link to the project's website.
+
+### Skill object
+- **id**: String. Id of the skill.
+- **name**: String. Name of the skill.
+- **category**: String. Category of the skill (Front-end, Back-end, SEO or Project management).
+
+## Installation
+
+First, run the following command:
+```
+npm start
+```
 
 ## Available Scripts
 

@@ -42,14 +42,13 @@ All the projects data are contained in two JSON files:
 ### Skill object
 - **id**: String. Id of the skill.
 - **name**: String. Name of the skill.
-- **category**: String. Category of the skill (Front-end, Back-end, SEO or Project management).
+- **category**: String. Category of the skill (front-end, back-end, SEO or project management).
 
 ## Installation
 
 First, run the following command:
-```
-npm start
-```
+
+### `npm install`
 
 ## Available Scripts
 

@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Features
 
 ### Home page
-A the top, a navigation bar containing my firstname, lastname, logo and the links to the different pages (Works, About).
+A the top, a navigation bar containing my firstname, lastname, logo and the links to the different pages (Works, About).  
 In the center of the page a section can be found with the job title and a brief introduction phrase. Social network links can be found at the bottom (Github and LinkedIn).
 
 ### Works page

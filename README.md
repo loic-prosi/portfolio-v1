@@ -12,7 +12,8 @@ In the center of the page a section can be found with the job title and a brief 
 Social network links can be found at the bottom (Github and LinkedIn).
 
 ### Works page
-List of cards containing the name, year and the logo of the project. One or more tags are present corresponding to the categories of the project (front-end, back-end, SEO or project management).  
+List of cards containing the name, year and the logo of the project.  
+One or more tags are present corresponding to the categories of the project (front-end, back-end, SEO or project management).  
 When a user click on one project he is redirected to the corresponding page.  
 Also, projects can be filtered by categories.
 
